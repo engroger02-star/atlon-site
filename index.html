@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Conheça o A.T.L.O.N. Mark I para Windows e baixe o manual de uso.">
+  <meta name="description" content="Baixe o A.T.L.O.N. Mark I beta para Windows. Instalador com Python incluído e manual em PDF.">
   <title>A.T.L.O.N. · Mark I</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,49 +16,60 @@
   <main id="inicio">
     <section class="intro" aria-labelledby="titulo">
       <div>
-        <p class="eyebrow">MARK I / WINDOWS / BETA EM PREPARAÇÃO</p>
+        <p class="eyebrow">MARK I / WINDOWS / BETA 1.0.1</p>
         <h1 id="titulo">Seu assistente.</h1>
         <p class="lead">Seu assistente de voz para o dia a dia e para o trabalho em engenharia civil.</p>
-        <p class="status"><span aria-hidden="true">○</span> Instalação em preparação</p>
+        <p class="status"><span aria-hidden="true">●</span> Beta disponível para download</p>
       </div>
       <div class="core" aria-hidden="true"><span></span><i></i></div>
     </section>
     <section class="download" aria-labelledby="instalador">
       <div>
         <h2 id="instalador">Instalador para Windows</h2>
-        <p>A instalação da Mark I está em preparação. O manual já está disponível abaixo.</p>
+        <p>Windows 10 ou 11 de 64 bits. O Python já vem incluído.</p>
+        <p class="download-note">Baixe, instale e informe sua chave do Gemini. Sem login para baixar.</p>
       </div>
-      <button type="button" disabled>⬇ &nbsp; Baixar A.T.L.O.N.</button>
+      <a class="download-button" href="https://github.com/engroger02-star/atlon-site/releases/download/v1.0.1-beta.2/Atlon-Setup-1.0.1.exe">⬇ &nbsp; Baixar Atlon Mark I</a>
     </section>
+    <p class="release-info">Versão 1.0.1 · Windows x64 · <a href="https://github.com/engroger02-star/atlon-site/releases/tag/v1.0.1-beta.2">Notas da versão e verificação do arquivo</a></p>
     <section class="guides" id="guias" aria-labelledby="passos">
       <p class="eyebrow">CONFIGURAÇÃO</p>
       <h2 id="passos">Primeiros passos</h2>
       <p>O manual explica como começar, conectar suas contas e usar as ferramentas do Atlon.</p>
       <p class="manual"><a href="manual-atlon.pdf" download>⬇ &nbsp; Baixar manual do A.T.L.O.N. (PDF)</a></p>
       <details>
-        <summary>01 &nbsp; Ativar a conversa</summary>
-        <p>Gere sua chave no Google AI Studio. Na primeira abertura, cole a chave no campo protegido do A.T.L.O.N. Confira no Google a cota disponível para sua conta.</p>
+        <summary>01 &nbsp; Baixar e instalar</summary>
+        <p>Clique em Baixar Atlon Mark I, abra o instalador e siga as etapas. Você não precisa instalar Python, Git, ChatGPT ou Claude.</p>
+        <p>Este beta ainda não tem assinatura digital de editor. O Windows pode exibir um aviso ao abrir o instalador. Confira se o arquivo veio deste site; se houver dúvida, consulte o responsável pelo beta.</p>
+      </details>
+      <details>
+        <summary>02 &nbsp; Ativar a conversa</summary>
+        <p>Gere sua chave no <a href="https://aistudio.google.com/apikey">Google AI Studio</a>. Na primeira abertura, cole a chave no campo protegido do A.T.L.O.N. Confira no Google a cota disponível para sua conta.</p>
         <p>O modo de conversa padrão usa Gemini. ChatGPT, Claude e Groq são integrações opcionais.</p>
       </details>
       <details>
-        <summary>02 &nbsp; Conectar uma conta do Google</summary>
+        <summary>03 &nbsp; Conectar uma conta do Google (opcional)</summary>
         <p>No A.T.L.O.N., abra a engrenagem, entre em Configuração guiada e escolha Contas do Google. Cadastre o e-mail e clique em Autorizar. No navegador, confira o endereço e as permissões antes de aceitar.</p>
         <p>Conecte as contas que você quer usar. Cada conta é autorizada no Google e está sujeita às cotas do serviço.</p>
         <p>Se o projeto de integração do Google estiver em modo de teste, ele exige usuários de teste cadastrados. A integração é opcional.</p>
         <p>Se o Atlon pedir o arquivo do Google, crie um cliente OAuth do tipo Aplicativo para computador no Google Cloud e baixe o JSON. Salve em uma pasta local, fora do OneDrive. Volte ao Atlon e clique em Escolher arquivo do Google. <a href="https://developers.google.com/workspace/guides/create-credentials?hl=pt-br#desktop-app">Guia oficial do Google</a></p>
       </details>
       <details>
-        <summary>03 &nbsp; Ajustar som e preferências</summary>
+        <summary>04 &nbsp; Ajustar som e preferências</summary>
         <p>Em Configuração guiada, escolha Microfone e som para selecionar os dispositivos. Use Preferências do assistente para ajustar a aparência e a voz.</p>
+        <p>Em Do seu jeito, informe nome e cidade, escolha o conteúdo do bom dia e ative palmas se quiser. Em Opções do aplicativo, ajuste avisos, privacidade, pasta de notas e desempenho.</p>
+        <p>Você pode pedir “configure meu bom dia”, “ative as palmas” ou “deixe o aplicativo mais leve”. As configurações ficam no Atlon; Codex e Claude Code não são necessários.</p>
+        <p>Para WhatsApp, siga a guia no aplicativo: o Atlon usa notificações recebidas no Windows, com prévia do texto. Agenda e mensagens no bom dia são opcionais.</p>
       </details>
       <details>
-        <summary>04 &nbsp; Preparar AutoCAD ou Revit</summary>
+        <summary>05 &nbsp; Preparar AutoCAD ou Revit (opcional)</summary>
         <p>Instale o programa separadamente. Para ler o Revit, prepare o pyRevit e ative o Agent Runtime em modo somente leitura. Nos comandos que alteram um desenho, confira a prévia antes de confirmar.</p>
+        <p>O Atlon já inclui uma base de referência preparada com guias oficiais de AutoCAD e Revit. Você não precisa importar PDFs. O conhecimento ajuda na orientação; as operações disponíveis continuam exigindo os dados do projeto e sua confirmação.</p>
       </details>
       <details>
-        <summary>05 &nbsp; Entender as versões</summary>
+        <summary>06 &nbsp; Atualizar e entender as versões</summary>
         <p>Mark I identifica a primeira geração do Atlon. Mark II e Mark III identificarão as próximas gerações. Correções da mesma geração poderão usar números como 1.0.1 e 1.0.2.</p>
-        <p>A instalação e as atualizações do beta ainda estão em validação.</p>
+        <p>Quando houver uma atualização, baixe o novo instalador neste site. Feche o Atlon e instale na mesma pasta para manter suas configurações. As atualizações do beta são feitas pelo instalador.</p>
       </details>
     </section>
   </main>
