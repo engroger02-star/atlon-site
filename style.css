@@ -11,3 +11,18 @@
 @media(max-width:900px){.wrap{width:calc(100% - 48px)}.hero{gap:1rem;min-height:560px;padding-block:3rem}.experience,.project,.guide{gap:2rem}.download{padding:2rem;gap:2rem}.top nav{gap:1rem}.capabilities{gap:1.3rem}}
 @media(max-width:640px){.wrap{width:calc(100% - 36px)}.top{min-height:86px;flex-wrap:wrap;justify-content:center;padding-block:1rem;gap:1rem}.brand{font-size:.9rem}.top nav{width:100%;justify-content:center;font-size:.7rem;gap:1.4rem}.top nav .nav-download{padding:.4rem .8rem}.hero{grid-template-columns:1fr;padding-block:3rem 2.5rem;gap:2.5rem}.hero h1{font-size:clamp(2.6rem,11vw,4rem)}.lead{font-size:.9rem}.actions{gap:1.25rem}.nucleus{width:100%;min-height:350px}.nucleus canvas{max-height:350px}.experience,.project,.guide{grid-template-columns:1fr;padding-block:3rem;gap:2rem}.capabilities{grid-template-columns:1fr;gap:1.5rem;padding-bottom:3rem}.download{grid-template-columns:1fr;gap:1.8rem;padding:1.5rem}.download-actions{max-width:none}.download-actions .text-link{max-width:none}.unit-rule{align-items:flex-start}footer{justify-content:center;text-align:center}footer>span{width:100%}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
+.release{border-top:1px solid var(--line);padding-block:4.5rem;scroll-margin-top:2rem}
+.release-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2rem}
+.release-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
+.release-grid article{border-top:1px solid var(--line);padding-top:1.15rem}
+.release-grid p{margin-top:.55rem}
+.demo-toolbar{flex-wrap:wrap}
+.hub-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.8fr);gap:2.5rem;align-items:center;margin-bottom:2.75rem;scroll-margin-top:2rem}
+.hub-copy h3{font-size:clamp(1.35rem,2.2vw,1.85rem);color:var(--text)}
+.hub-copy p{margin-top:.75rem}
+.hub-copy strong{color:var(--text)}
+.hub-picker{max-width:320px}
+.hub-screen{margin:0}
+.hub-screen a{display:block}
+@media(max-width:760px){.hub-feature{grid-template-columns:1fr;gap:1.35rem}.hub-screen{max-width:100%}}
+@media(max-width:640px){.release{padding-block:3rem}.release-grid{grid-template-columns:1fr;gap:1.25rem}}
