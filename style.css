@@ -24,5 +24,8 @@
 .hub-picker{max-width:320px}
 .hub-screen{margin:0}
 .hub-screen a{display:block}
-@media(max-width:760px){.hub-feature{grid-template-columns:1fr;gap:1.35rem}.hub-screen{max-width:100%}}
+.setup-feature{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}
+.setup-feature .hub-screen{max-width:520px}
+.hero>div,.experience>div,.project>div,.guide>div,.video-card{min-width:0}
+@media(max-width:760px){.hub-feature{grid-template-columns:minmax(0,1fr);gap:1.35rem}.hub-screen{max-width:100%;min-width:0}}
 @media(max-width:640px){.release{padding-block:3rem}.release-grid{grid-template-columns:1fr;gap:1.25rem}}
