@@ -29,3 +29,50 @@
 .hero>div,.experience>div,.project>div,.guide>div,.video-card{min-width:0}
 @media(max-width:760px){.hub-feature{grid-template-columns:minmax(0,1fr);gap:1.35rem}.hub-screen{max-width:100%;min-width:0}}
 @media(max-width:640px){.release{padding-block:3rem}.release-grid{grid-template-columns:1fr;gap:1.25rem}}
+/* 20/11/2026: friendlier look for everyone (Roger: "sem cara de programação"). Same colours and sphere;
+   plain modern type, the app visible at the top, rounder buttons. */
+:root{--sans:"Inter","Segoe UI",system-ui,-apple-system,Arial,sans-serif;font-family:var(--sans)}
+body{font-family:var(--sans)}
+h1{font-weight:700;letter-spacing:-.045em;line-height:1.04}
+h2{font-weight:650;letter-spacing:-.035em;line-height:1.12}
+h3{font-weight:600;letter-spacing:-.01em}
+p{font-size:1rem;line-height:1.7}
+.lead{font-size:1.12rem;max-width:40ch;color:#b7cfdb}
+.brand{letter-spacing:.18em;font-weight:600}
+.top nav{font-size:.9rem;font-weight:500}
+.top nav .nav-download{border-radius:999px;padding:.55rem 1.1rem;border-color:var(--accent)}
+.button{border-radius:12px;font-size:.95rem;gap:.6rem}
+.text-link{font-size:.92rem}
+.fine{font-size:.82rem}
+.kicker{font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.edition{font-size:.85rem;font-weight:500}
+.hero{grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:3rem;min-height:600px;padding-block:4rem 3.5rem}
+.hero-visual{position:relative;min-width:0}
+.hero-orb{position:absolute;width:300px;right:-70px;top:-110px;z-index:0;pointer-events:none;opacity:.95}
+.hero-orb #sphere{display:block;width:100%;height:auto;min-height:0}
+.hero-shot{position:relative;z-index:1;display:block;width:100%;height:auto;border-radius:14px;border:1px solid #1d5b78;box-shadow:0 0 70px #00d4ff1f,0 30px 70px #000c}
+.demo{border-radius:14px;overflow:hidden}
+.demo-toolbar button{font-size:.85rem;border-radius:8px}
+.demo-label{font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.question{font-size:1.1rem}
+.answer p{font-size:.95rem}
+.demo-note{font-size:.78rem}
+.release-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.release-grid article{border-top:0;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.3rem}
+.release-grid .icon{display:block;font-size:1.4rem;margin-bottom:.7rem;color:var(--accent)}
+.release-grid p{font-size:.92rem}
+figure img,.hub-screen img{border-radius:12px}
+figcaption{font-size:.82rem}
+.video-card video{border-radius:12px}
+.video-card p,.capabilities p{font-size:.92rem}
+.download{border-radius:18px}
+.download-actions .text-link{font-size:.85rem}
+summary{font-size:1rem;font-weight:500}
+details p{font-size:.95rem}
+.unit-rule{font-size:.92rem}
+.unit-rule span{border-radius:10px}
+footer>span,footer>a:last-child{font-size:.82rem}
+@media(max-width:1000px){.release-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:820px){.hero{grid-template-columns:1fr;min-height:0;gap:2.5rem}.hero-orb{width:200px;right:-20px;top:-80px}}
+@media(max-width:640px){.release-grid{grid-template-columns:1fr}.hero-orb{width:150px;right:-10px;top:-60px}}
+main{overflow-x:clip}
