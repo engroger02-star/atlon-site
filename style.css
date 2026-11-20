@@ -29,7 +29,7 @@
 .hero>div,.experience>div,.project>div,.guide>div,.video-card{min-width:0}
 @media(max-width:760px){.hub-feature{grid-template-columns:minmax(0,1fr);gap:1.35rem}.hub-screen{max-width:100%;min-width:0}}
 @media(max-width:640px){.release{padding-block:3rem}.release-grid{grid-template-columns:1fr;gap:1.25rem}}
-/* 20/11/2026: friendlier look for everyone (Roger: "sem cara de programação"). Same colours and sphere;
+/* Friendlier look: same colours and sphere,
    plain modern type, the app visible at the top, rounder buttons. */
 :root{--sans:"Inter","Segoe UI",system-ui,-apple-system,Arial,sans-serif;font-family:var(--sans)}
 body{font-family:var(--sans)}
